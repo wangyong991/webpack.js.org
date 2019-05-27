@@ -62,7 +62,9 @@ __webpack.common.js__
 +     app: './src/index.js'
 +   },
 +   plugins: [
-+     new CleanWebpackPlugin(['dist']),
+      //CleanWebpackPlugin v2版本以下使用该写法
++     //new CleanWebpackPlugin(['dist/*']),
++     new CleanWebpackPlugin(),
 +     new HtmlWebpackPlugin({
 +       title: 'Production'
 +     })
